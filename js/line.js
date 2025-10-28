@@ -1,6 +1,6 @@
 // Line chart: average power prices 1998–2024
 (() => {
-    const sel = d3.select("#line");
+    const sel = d3.select("#lineChart");
 
     const render = (rows) => {
         sel.selectAll("svg").remove();

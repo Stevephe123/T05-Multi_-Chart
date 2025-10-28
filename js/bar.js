@@ -1,6 +1,6 @@
 // Bar: 55-inch TVs by screen tech
 (() => {
-    const sel = d3.select("#bar");
+    const sel = d3.select("#barChart");
 
     const render = (rows) => {
         sel.selectAll("svg").remove();

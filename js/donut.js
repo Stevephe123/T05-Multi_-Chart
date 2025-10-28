@@ -1,6 +1,6 @@
 // Donut: all sizes energy consumption by Screen_Tech
 (() => {
-    const sel = d3.select("#donut");
+    const sel = d3.select("#donutChart");
 
     const render = (rows) => {
         sel.selectAll("svg").remove();

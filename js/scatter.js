@@ -1,6 +1,6 @@
 // Scatter plot: energy consumption vs star rating
 (() => {
-    const sel = d3.select("#scatter");
+    const sel = d3.select("#scatterChart");
     const tooltip = d3.select("body").append("div").attr("class", "tooltip").style("opacity", 0);
 
     const render = (rows) => {

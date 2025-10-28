@@ -1,52 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
-    <title>COS30045 — T05 Multi-Chart (D3)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./styles.css" />
+    <title>D3 Charts Dashboard — TV Power Consumption</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="js/scatter.js" defer></script>
+    <script src="js/donut.js" defer></script>
+    <script src="js/bar.js" defer></script>
+    <script src="js/line.js" defer></script>
 </head>
 
 <body>
-    <header class="container narrow">
-        <h1>TV Energy & Power Prices — Multi-Chart</h1>
-        <p class="lede">
-            Four common chart types with D3: Scatter, Donut, Bar, and Line. Resize the window—everything is responsive.
-        </p>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <h1>D3 Charts Dashboard</h1>
+        <p>TV Power Consumption</p>
     </header>
 
-    <main class="grid container">
-        <section class="card">
-            <h2>Scatter: Energy vs Star Rating (all TVs)</h2>
-            <div id="scatter" class="chart"></div>
+    <!-- Charts Container -->
+    <main class="dashboard-container">
+        <section class="chart-card">
+            <h2>Scatter: Energy vs Star Rating</h2>
+            <div id="scatterChart" class="chart"></div>
         </section>
 
-        <section class="card">
-            <h2>Donut: Total Energy by Screen Technology</h2>
-            <div id="donut" class="chart"></div>
-        </section>
-
-        <section class="card">
-            <h2>Bar: Energy by Tech — 55″ TVs Only</h2>
-            <div id="bar" class="chart"></div>
-        </section>
-
-        <section class="card">
+        <section class="chart-card">
             <h2>Line: Spot Power Prices (1998–2024)</h2>
-            <div id="line" class="chart"></div>
+            <div id="lineChart" class="chart"></div>
+        </section>
+
+        <section class="chart-card">
+            <h2>Bar: Energy by Tech — 55″ TVs</h2>
+            <div id="barChart" class="chart"></div>
+        </section>
+
+        <section class="chart-card">
+            <h2>Donut: Total Energy by Screen Technology</h2>
+            <div id="donutChart" class="chart"></div>
         </section>
     </main>
 
-    <footer class="container narrow">
-        <small>Built with D3. Data placeholders—replace with your CSVs.</small>
-    </footer>
-
-    <script src="./js/scatter.js"></script>
-    <script src="./js/donut.js"></script>
-    <script src="./js/bar.js"></script>
-    <script src="./js/line.js"></script>
-</body>
-
-</html>
+    <footer>
+        <small>Built with D3.js — COS30045 Exercise T05</small>
